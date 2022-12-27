@@ -15,59 +15,103 @@
 
 <body>
 
+    <style type="text/css">
+        #brand-cards .dropdown-toggle::after {
+            display: none !important;
+        }
+        #brand-cards .dropdown-menu {
+            left: 22% !important;        
+        }
+        #brand-cards .dropdown-menu:before,
+        #brand-cards .dropdown-menu:after{
+            content: ' ';
+            display: block;
+            border-style: solid;
+            border-width: 0 .5em .8em .5em;
+            border-color: transparent;
+            position: absolute;
+            left: 4rem;
+        }
+        #brand-cards .dropdown-menu:before {
+            top: -.8em;
+            border-bottom-color: rgba(0,0,0,0.5);
+            }
+        #brand-cards .dropdown-menu:after {
+            top: -.7em;
+            border-bottom-color: #fff;
+        }
+
+        @media only screen and (max-width: 767px) {
+            #brand-cards .dropdown-menu:before {
+                top: 13.2em;
+                bottom: -14px !important;
+                transform: rotate(3.142rad) !important;
+            }
+            #brand-cards .dropdown-menu:after {
+                top: 13em;
+                bottom: -13px !important;
+                transform: rotate(3.142rad) !important;
+            }
+        }
+    </style>
+
     <section id="brand-cards">
         <div class="container-fluid">
             <div class="container">
 
-                <div class="row d-lg-flex">
-                    <div class="col-3">
+                <div class="row d-lg-flex g-lg-5">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/TKE.png" class="card-img-top" alt="TKE logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/Kone.png" class="card-img-top" alt="Kone logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/OTIS.png" class="card-img-top" alt="OTIS logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/Hitachi.png" class="card-img-top" alt="Hitachi logo"></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row d-lg-flex">
-                    <div class="col-3">
+                <div class="row d-lg-flex g-lg-5 pt-lg-4">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/Schindler.png" class="card-img-top" alt="Schindler logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
-                            <a href="#"><img src="./images/Mitsubishi.png" class="card-img-top" alt="Mitsubishi logo"></a>
+                            <a href="#"><img src="./images/Mitsubishi.png" class="card-img-top"
+                                    alt="Mitsubishi logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card border-0 h-100">
                             <a href="#"><img src="./images/Toshib.png" class="card-img-top" alt="Toshiba logo"></a>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card dropdown border-0 h-100 ">
-                            <a class="dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <img src="./images/More.png" class="card-img-top" alt="click more logo">
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">FuJiTEC</a></li>
+                                <li><a class="dropdown-item" href="#">XIOLIFT</a></li>
+                                <li><a class="dropdown-item" href="#">HYUNDAI</a></li>
+                                <li><a class="dropdown-item" href="#">CANNY</a></li>
+                                <li><a class="dropdown-item" href="#">XJ Schindler</a></li>
+                                <li><a class="dropdown-item" href="#">...</a></li>
                             </ul>
                         </div>
                     </div>
