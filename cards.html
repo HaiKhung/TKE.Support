@@ -16,6 +16,9 @@
 <body>
 
     <style type="text/css">
+        .text-orange {
+            color: #DC6207 !important;
+        }
         #brand-cards .dropdown-toggle::after {
             display: none !important;
         }
@@ -40,6 +43,19 @@
             top: -.7em;
             border-bottom-color: #fff;
         }
+        .vl {
+            border: rgb(160, 154, 154) solid 0.5px;
+        }
+        #banner-top .background-image {
+            background-image: url("./images/service-technician-in-elevator-shaft.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 61%;
+            height: 300px;
+        }
+        #banner-top img {
+            width: -webkit-fill-available;
+        }
 
         @media only screen and (max-width: 992px) {
             #brand-cards .dropdown-menu {
@@ -58,6 +74,39 @@
             }
         }
     </style>
+
+    <section id="banner-top">
+        <div class="container-fluid background-image mb-5 d-none d-lg-block">
+            <div class="row h-100 align-content-lg-center align-content-end">
+                <div class="text bg-black col-4 mh-100">
+                    <h1 class="text-uppercase text-orange">its ksp</h1>
+                    <p class="text-white">ITS KSP provides you with all necessary field-operation technical information.
+                        Here you can find
+                        manuals, tools, electrical schematics, simulators and spare parts. ​</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-block d-lg-none mb-3 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="image">
+                            <img src="./images/service-technician-in-elevator-shaft.jpg" height="250"
+                                alt="service-technician-in-elevator-shaft">
+                        </div>
+                        <div class="text bg-black p-2">
+                            <h1 class="text-uppercase text-orange">its ksp</h1>
+                            <p class="text-white">ITS KSP provides you with all necessary field-operation technical information.
+                                Here you can find
+                                manuals, tools, electrical schematics, simulators and spare parts. ​</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section id="brand-cards">
         <div class="container-fluid">
@@ -121,6 +170,24 @@
                     </div>
                 </div>
     </section>
+
+    <footer>
+        <div class="container-fluid mb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="list d-lg-flex list-unstyled mt-3">
+                            <li><a href="#" class="list-group-item list-group-item-action">ITS KSP Permission Application Form​</a></li>
+                            <li class="vl mx-4 d-none d-lg-block"></li>
+                            <li><a href="#" class="list-group-item list-group-item-action">ITS KSP User Guide​</a></li>
+                            <li class="vl mx-4 d-none d-lg-block"></li>
+                            <li><a href="#" class="list-group-item list-group-item-action">Document Upload Application Form​</a></li>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
